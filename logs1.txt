@@ -1,0 +1,980 @@
+Starting the Java application using /opt/jboss/container/java/run/run-java.sh ...
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2023-08-21 15:49:04,010 WARN  [org.apa.kaf.cli.adm.AdminClientConfig] (main) These configurations '[ssl.endpoint.identification.algorithm]' were supplied but are not used yet.
+2023-08-21 15:49:04,069 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | adminclient-1) [AdminClient clientId=adminclient-1] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:04,077 INFO  [org.kaf.StreamingApplication] (main) Hellllllllllllllllllllllllloooooooooooooooooooooooo
+2023-08-21 15:49:04,080 INFO  [io.con.kaf.ser.KafkaAvroSerializerConfig] (main) KafkaAvroSerializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.remove.java.properties = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8080]
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-08-21 15:49:04,178 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | adminclient-1) [AdminClient clientId=adminclient-1] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:04,279 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | adminclient-1) [AdminClient clientId=adminclient-1] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:04,379 INFO  [io.con.kaf.ser.KafkaAvroDeserializerConfig] (main) KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8080]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-08-21 15:49:04,417 INFO  [org.apa.kaf.str.StreamsConfig] (main) StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = play-with-quarkus
+	application.server = 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [kafka-1:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = null
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = null
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	rack.aware.assignment.tags = []
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	statestore.cache.max.bytes = 10485760
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2023-08-21 15:49:04,445 WARN  [org.apa.kaf.cli.adm.AdminClientConfig] (main) These configurations '[ssl.endpoint.identification.algorithm]' were supplied but are not used yet.
+2023-08-21 15:49:04,447 INFO  [org.apa.kaf.str.KafkaStreams] (main) stream-client [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a] Kafka Streams version: 3.4.0
+2023-08-21 15:49:04,447 INFO  [org.apa.kaf.str.KafkaStreams] (main) stream-client [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a] Kafka Streams commit ID: 2e1947d240607d53
+2023-08-21 15:49:04,449 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin) [AdminClient clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:04,461 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Creating restore consumer client
+2023-08-21 15:49:04,500 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Creating thread producer client
+2023-08-21 15:49:04,540 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Creating consumer client
+2023-08-21 15:49:04,551 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin) [AdminClient clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:04,558 INFO  [org.apa.kaf.str.pro.int.ass.AssignorConfiguration] (main) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2023-08-21 15:49:04,582 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | adminclient-1) [AdminClient clientId=adminclient-1] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:04,653 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin) [AdminClient clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:04,774 INFO  [io.quarkus] (main) play-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.2.4.Final) started in 1.968s. Listening on: http://0.0.0.0:8080
+2023-08-21 15:49:04,774 INFO  [io.quarkus] (main) Profile prod activated. 
+2023-08-21 15:49:04,775 INFO  [io.quarkus] (main) Installed features: [cdi, confluent-registry-avro, kafka-client, kafka-streams, resteasy-jackson, smallrye-context-propagation, vertx]
+2023-08-21 15:49:04,801 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:04,802 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Bootstrap broker kafka-1:9092 (id: -1 rack: null) disconnected
+2023-08-21 15:49:04,856 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin) [AdminClient clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:04,905 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:04,905 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Bootstrap broker kafka-1:9092 (id: -1 rack: null) disconnected
+2023-08-21 15:49:05,003 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | adminclient-1) [AdminClient clientId=adminclient-1] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:05,057 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:05,057 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Bootstrap broker kafka-1:9092 (id: -1 rack: null) disconnected
+2023-08-21 15:49:05,259 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin) [AdminClient clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:05,310 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:05,310 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Bootstrap broker kafka-1:9092 (id: -1 rack: null) disconnected
+2023-08-21 15:49:05,710 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | adminclient-1) [AdminClient clientId=adminclient-1] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:05,770 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:05,771 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Bootstrap broker kafka-1:9092 (id: -1 rack: null) disconnected
+2023-08-21 15:49:06,164 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin) [AdminClient clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:06,631 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:06,632 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Bootstrap broker kafka-1:9092 (id: -1 rack: null) disconnected
+2023-08-21 15:49:06,917 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | adminclient-1) [AdminClient clientId=adminclient-1] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:07,170 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin) [AdminClient clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:07,648 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:07,648 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Bootstrap broker kafka-1:9092 (id: -1 rack: null) disconnected
+2023-08-21 15:49:08,125 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | adminclient-1) [AdminClient clientId=adminclient-1] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:08,376 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-admin-client-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin) [AdminClient clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-admin] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:08,763 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Connection to node -1 (kafka-1/172.30.0.3:9092) could not be established. Broker may not be available.
+2023-08-21 15:49:08,763 WARN  [org.apa.kaf.cli.NetworkClient] (kafka-producer-network-thread | play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer) [Producer clientId=play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-producer] Bootstrap broker kafka-1:9092 (id: -1 rack: null) disconnected
+2023-08-21 15:49:09,797 WARN  [io.qua.kaf.str.run.KafkaStreamsProducer] (pool-5-thread-1) Waiting for topic(s) to be created: [user-information]
+2023-08-21 15:49:13,820 INFO  [org.apa.kaf.str.KafkaStreams] (pool-5-thread-1) stream-client [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a] State transition from CREATED to REBALANCING
+2023-08-21 15:49:13,823 INFO  [org.apa.kaf.str.KafkaStreams] (pool-5-thread-1) stream-client [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a] Started 1 stream threads
+2023-08-21 15:49:13,823 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Starting
+2023-08-21 15:49:13,824 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] State transition from CREATED to STARTING
+2023-08-21 15:49:13,941 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 15:49:18,449 INFO  [org.apa.kaf.str.pro.int.RepartitionTopics] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-consumer] Skipping the repartition topic validation since there are no repartition topics.
+2023-08-21 15:49:18,454 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-consumer] All members participating in this rebalance: 
+7a7307eb-3617-4eec-aec5-b93ee7524c9a: [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-consumer-f432b28a-1ee4-46d6-b87d-04b82394c6b3].
+2023-08-21 15:49:18,469 INFO  [org.apa.kaf.str.pro.int.ass.HighAvailabilityTaskAssignor] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) Decided on assignment: {7a7307eb-3617-4eec-aec5-b93ee7524c9a=[activeTasks: ([0_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([]) clientTags: ([]) capacity: 1 assigned: 1]} with no followup probing rebalance.
+2023-08-21 15:49:18,470 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-consumer] Assigned tasks [0_0] including stateful [] to clients as: 
+7a7307eb-3617-4eec-aec5-b93ee7524c9a=[activeTasks: ([0_0]) standbyTasks: ([])].
+2023-08-21 15:49:18,474 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-consumer] Client 7a7307eb-3617-4eec-aec5-b93ee7524c9a per-consumer assignment:
+	prev owned active {}
+	prev owned standby {play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-consumer-f432b28a-1ee4-46d6-b87d-04b82394c6b3=[]}
+	assigned active {play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-consumer-f432b28a-1ee4-46d6-b87d-04b82394c6b3=[0_0]}
+	revoking active {}
+	assigned standby {}
+
+2023-08-21 15:49:18,474 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2023-08-21 15:49:18,600 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2023-08-21 15:49:18,601 INFO  [org.apa.kaf.str.pro.int.TaskManager] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2023-08-21 15:49:18,620 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2023-08-21 15:49:18,626 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] task [0_0] Initialized
+2023-08-21 15:49:18,638 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] task [0_0] Restored and ready to run
+2023-08-21 15:49:18,638 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Restoration took 18 ms for all tasks [0_0]
+2023-08-21 15:49:18,639 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2023-08-21 15:49:18,640 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-client [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a] State transition from REBALANCING to RUNNING
+2023-08-21 15:51:14,030 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 15:53:14,105 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 15:55:14,126 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 15:57:14,170 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 15:59:14,179 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:01:14,197 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:03:14,248 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:05:14,287 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:05:35,770 INFO  [org.apa.kaf.str.KafkaStreams] (Shutdown thread) stream-client [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a] State transition from RUNNING to PENDING_SHUTDOWN
+2023-08-21 16:05:35,773 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-CloseThread) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Informed to shut down
+2023-08-21 16:05:35,773 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-CloseThread) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2023-08-21 16:05:35,773 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-CloseThread) stream-client [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a] Shutting down 1 stream threads
+2023-08-21 16:05:35,804 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Shutting down clean
+2023-08-21 16:05:35,807 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] task [0_0] Suspended from RUNNING
+2023-08-21 16:05:35,810 INFO  [org.apa.kaf.str.pro.int.RecordCollectorImpl] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] task [0_0] Closing record collector clean
+2023-08-21 16:05:35,810 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] task [0_0] Closed clean
+2023-08-21 16:05:35,818 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2023-08-21 16:05:35,818 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1) stream-thread [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-StreamThread-1] Shutdown complete
+2023-08-21 16:05:35,819 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-CloseThread) stream-client [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a] Shutdown 1 stream threads complete
+2023-08-21 16:05:35,821 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a-CloseThread) stream-client [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2023-08-21 16:05:35,821 INFO  [org.apa.kaf.str.KafkaStreams] (Shutdown thread) stream-client [play-with-quarkus-7a7307eb-3617-4eec-aec5-b93ee7524c9a] Streams client stopped completely
+2023-08-21 16:05:35,843 INFO  [io.quarkus] (Shutdown thread) play-with-quarkus stopped in 0.088s
+Starting the Java application using /opt/jboss/container/java/run/run-java.sh ...
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2023-08-21 16:05:37,673 WARN  [org.apa.kaf.cli.adm.AdminClientConfig] (main) These configurations '[ssl.endpoint.identification.algorithm]' were supplied but are not used yet.
+2023-08-21 16:05:37,731 INFO  [org.kaf.StreamingApplication] (main) Hellllllllllllllllllllllllloooooooooooooooooooooooo
+2023-08-21 16:05:37,738 INFO  [io.con.kaf.ser.KafkaAvroSerializerConfig] (main) KafkaAvroSerializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.remove.java.properties = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8080]
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-08-21 16:05:38,102 INFO  [io.con.kaf.ser.KafkaAvroDeserializerConfig] (main) KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8080]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-08-21 16:05:38,130 INFO  [org.apa.kaf.str.StreamsConfig] (main) StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = play-with-quarkus
+	application.server = 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [kafka-1:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = null
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = null
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	rack.aware.assignment.tags = []
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	statestore.cache.max.bytes = 10485760
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2023-08-21 16:05:38,150 WARN  [org.apa.kaf.cli.adm.AdminClientConfig] (main) These configurations '[ssl.endpoint.identification.algorithm]' were supplied but are not used yet.
+2023-08-21 16:05:38,154 INFO  [org.apa.kaf.str.KafkaStreams] (main) stream-client [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90] Kafka Streams version: 3.4.0
+2023-08-21 16:05:38,154 INFO  [org.apa.kaf.str.KafkaStreams] (main) stream-client [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90] Kafka Streams commit ID: 2e1947d240607d53
+2023-08-21 16:05:38,167 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] Creating restore consumer client
+2023-08-21 16:05:38,194 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] Creating thread producer client
+2023-08-21 16:05:38,223 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] Creating consumer client
+2023-08-21 16:05:38,237 INFO  [org.apa.kaf.str.pro.int.ass.AssignorConfiguration] (main) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2023-08-21 16:05:38,357 INFO  [io.quarkus] (main) play-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.2.4.Final) started in 1.541s. Listening on: http://0.0.0.0:8080
+2023-08-21 16:05:38,357 INFO  [io.quarkus] (main) Profile prod activated. 
+2023-08-21 16:05:38,358 INFO  [io.quarkus] (main) Installed features: [cdi, confluent-registry-avro, kafka-client, kafka-streams, resteasy-jackson, smallrye-context-propagation, vertx]
+2023-08-21 16:05:39,264 INFO  [org.apa.kaf.str.KafkaStreams] (pool-5-thread-1) stream-client [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90] State transition from CREATED to REBALANCING
+2023-08-21 16:05:39,266 INFO  [org.apa.kaf.str.KafkaStreams] (pool-5-thread-1) stream-client [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90] Started 1 stream threads
+2023-08-21 16:05:39,266 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] Starting
+2023-08-21 16:05:39,266 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] State transition from CREATED to STARTING
+2023-08-21 16:05:39,371 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:06:18,719 INFO  [org.apa.kaf.str.pro.int.RepartitionTopics] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1-consumer] Skipping the repartition topic validation since there are no repartition topics.
+2023-08-21 16:06:18,729 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1-consumer] All members participating in this rebalance: 
+84dd1e9c-957c-4363-a58e-f7844befcd90: [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1-consumer-1786ed82-ff69-4725-bc12-ce661358a501].
+2023-08-21 16:06:18,738 INFO  [org.apa.kaf.str.pro.int.ass.HighAvailabilityTaskAssignor] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) Decided on assignment: {84dd1e9c-957c-4363-a58e-f7844befcd90=[activeTasks: ([0_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([]) clientTags: ([]) capacity: 1 assigned: 1]} with no followup probing rebalance.
+2023-08-21 16:06:18,742 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1-consumer] Assigned tasks [0_0] including stateful [] to clients as: 
+84dd1e9c-957c-4363-a58e-f7844befcd90=[activeTasks: ([0_0]) standbyTasks: ([])].
+2023-08-21 16:06:18,748 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1-consumer] Client 84dd1e9c-957c-4363-a58e-f7844befcd90 per-consumer assignment:
+	prev owned active {}
+	prev owned standby {play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1-consumer-1786ed82-ff69-4725-bc12-ce661358a501=[]}
+	assigned active {play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1-consumer-1786ed82-ff69-4725-bc12-ce661358a501=[0_0]}
+	revoking active {}
+	assigned standby {}
+
+2023-08-21 16:06:18,750 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2023-08-21 16:06:18,770 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2023-08-21 16:06:18,770 INFO  [org.apa.kaf.str.pro.int.TaskManager] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2023-08-21 16:06:18,785 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2023-08-21 16:06:18,802 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] task [0_0] Initialized
+2023-08-21 16:06:18,808 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] task [0_0] Restored and ready to run
+2023-08-21 16:06:18,809 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] Restoration took 23 ms for all tasks [0_0]
+2023-08-21 16:06:18,811 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2023-08-21 16:06:18,812 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-client [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90] State transition from REBALANCING to RUNNING
+2023-08-21 16:07:39,433 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:07:52,750 INFO  [org.apa.kaf.str.KafkaStreams] (Shutdown thread) stream-client [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90] State transition from RUNNING to PENDING_SHUTDOWN
+2023-08-21 16:07:52,753 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-CloseThread) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] Informed to shut down
+2023-08-21 16:07:52,753 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-CloseThread) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2023-08-21 16:07:52,754 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-CloseThread) stream-client [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90] Shutting down 1 stream threads
+2023-08-21 16:07:52,836 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] Shutting down clean
+2023-08-21 16:07:52,843 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] task [0_0] Suspended from RUNNING
+2023-08-21 16:07:52,852 INFO  [org.apa.kaf.str.pro.int.RecordCollectorImpl] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] task [0_0] Closing record collector clean
+2023-08-21 16:07:52,853 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] task [0_0] Closed clean
+2023-08-21 16:07:52,871 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2023-08-21 16:07:52,871 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1) stream-thread [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-StreamThread-1] Shutdown complete
+2023-08-21 16:07:52,872 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-CloseThread) stream-client [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90] Shutdown 1 stream threads complete
+2023-08-21 16:07:52,877 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90-CloseThread) stream-client [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2023-08-21 16:07:52,878 INFO  [org.apa.kaf.str.KafkaStreams] (Shutdown thread) stream-client [play-with-quarkus-84dd1e9c-957c-4363-a58e-f7844befcd90] Streams client stopped completely
+2023-08-21 16:07:52,907 INFO  [io.quarkus] (Shutdown thread) play-with-quarkus stopped in 0.171s
+Starting the Java application using /opt/jboss/container/java/run/run-java.sh ...
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2023-08-21 16:07:54,892 WARN  [org.apa.kaf.cli.adm.AdminClientConfig] (main) These configurations '[ssl.endpoint.identification.algorithm]' were supplied but are not used yet.
+2023-08-21 16:07:54,975 INFO  [org.kaf.StreamingApplication] (main) Hellllllllllllllllllllllllloooooooooooooooooooooooo
+2023-08-21 16:07:54,980 INFO  [io.con.kaf.ser.KafkaAvroSerializerConfig] (main) KafkaAvroSerializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.remove.java.properties = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8080]
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-08-21 16:07:55,267 INFO  [io.con.kaf.ser.KafkaAvroDeserializerConfig] (main) KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8080]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-08-21 16:07:55,290 INFO  [org.apa.kaf.str.StreamsConfig] (main) StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = play-with-quarkus
+	application.server = 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [kafka-1:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = null
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = null
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	rack.aware.assignment.tags = []
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	statestore.cache.max.bytes = 10485760
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2023-08-21 16:07:55,309 WARN  [org.apa.kaf.cli.adm.AdminClientConfig] (main) These configurations '[ssl.endpoint.identification.algorithm]' were supplied but are not used yet.
+2023-08-21 16:07:55,311 INFO  [org.apa.kaf.str.KafkaStreams] (main) stream-client [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf] Kafka Streams version: 3.4.0
+2023-08-21 16:07:55,311 INFO  [org.apa.kaf.str.KafkaStreams] (main) stream-client [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf] Kafka Streams commit ID: 2e1947d240607d53
+2023-08-21 16:07:55,321 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Creating restore consumer client
+2023-08-21 16:07:55,349 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Creating thread producer client
+2023-08-21 16:07:55,374 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Creating consumer client
+2023-08-21 16:07:55,385 INFO  [org.apa.kaf.str.pro.int.ass.AssignorConfiguration] (main) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2023-08-21 16:07:55,488 INFO  [io.quarkus] (main) play-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.2.4.Final) started in 1.536s. Listening on: http://0.0.0.0:8080
+2023-08-21 16:07:55,489 INFO  [io.quarkus] (main) Profile prod activated. 
+2023-08-21 16:07:55,489 INFO  [io.quarkus] (main) Installed features: [cdi, confluent-registry-avro, kafka-client, kafka-streams, resteasy-jackson, smallrye-context-propagation, vertx]
+2023-08-21 16:07:56,416 INFO  [org.apa.kaf.str.KafkaStreams] (pool-5-thread-1) stream-client [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf] State transition from CREATED to REBALANCING
+2023-08-21 16:07:56,420 INFO  [org.apa.kaf.str.KafkaStreams] (pool-5-thread-1) stream-client [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf] Started 1 stream threads
+2023-08-21 16:07:56,422 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Starting
+2023-08-21 16:07:56,423 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] State transition from CREATED to STARTING
+2023-08-21 16:07:56,536 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:08:36,763 INFO  [org.apa.kaf.str.pro.int.RepartitionTopics] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1-consumer] Skipping the repartition topic validation since there are no repartition topics.
+2023-08-21 16:08:36,773 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1-consumer] All members participating in this rebalance: 
+4657aba6-d8af-495c-bc71-d6251a6415cf: [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1-consumer-1505aaa7-3753-4124-98f4-3a18dc2f9b4c].
+2023-08-21 16:08:36,783 INFO  [org.apa.kaf.str.pro.int.ass.HighAvailabilityTaskAssignor] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) Decided on assignment: {4657aba6-d8af-495c-bc71-d6251a6415cf=[activeTasks: ([0_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([]) clientTags: ([]) capacity: 1 assigned: 1]} with no followup probing rebalance.
+2023-08-21 16:08:36,783 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1-consumer] Assigned tasks [0_0] including stateful [] to clients as: 
+4657aba6-d8af-495c-bc71-d6251a6415cf=[activeTasks: ([0_0]) standbyTasks: ([])].
+2023-08-21 16:08:36,789 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1-consumer] Client 4657aba6-d8af-495c-bc71-d6251a6415cf per-consumer assignment:
+	prev owned active {}
+	prev owned standby {play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1-consumer-1505aaa7-3753-4124-98f4-3a18dc2f9b4c=[]}
+	assigned active {play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1-consumer-1505aaa7-3753-4124-98f4-3a18dc2f9b4c=[0_0]}
+	revoking active {}
+	assigned standby {}
+
+2023-08-21 16:08:36,791 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2023-08-21 16:08:36,806 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2023-08-21 16:08:36,807 INFO  [org.apa.kaf.str.pro.int.TaskManager] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2023-08-21 16:08:36,828 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2023-08-21 16:08:36,899 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] task [0_0] Initialized
+2023-08-21 16:08:36,904 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] task [0_0] Restored and ready to run
+2023-08-21 16:08:36,905 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Restoration took 77 ms for all tasks [0_0]
+2023-08-21 16:08:36,906 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2023-08-21 16:08:36,907 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-client [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf] State transition from REBALANCING to RUNNING
+2023-08-21 16:09:56,622 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:11:56,679 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:13:56,767 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:15:56,821 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:17:56,867 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:19:56,937 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:21:56,964 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:23:57,008 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:25:32,108 INFO  [org.apa.kaf.str.KafkaStreams] (Shutdown thread) stream-client [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf] State transition from RUNNING to PENDING_SHUTDOWN
+2023-08-21 16:25:32,111 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-CloseThread) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Informed to shut down
+2023-08-21 16:25:32,111 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-CloseThread) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] State transition from RUNNING to PENDING_SHUTDOWN
+2023-08-21 16:25:32,111 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-CloseThread) stream-client [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf] Shutting down 1 stream threads
+2023-08-21 16:25:32,178 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Shutting down clean
+2023-08-21 16:25:32,182 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] task [0_0] Suspended from RUNNING
+2023-08-21 16:25:32,184 INFO  [org.apa.kaf.str.pro.int.RecordCollectorImpl] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] task [0_0] Closing record collector clean
+2023-08-21 16:25:32,184 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] task [0_0] Closed clean
+2023-08-21 16:25:32,195 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] State transition from PENDING_SHUTDOWN to DEAD
+2023-08-21 16:25:32,196 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1) stream-thread [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-StreamThread-1] Shutdown complete
+2023-08-21 16:25:32,196 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-CloseThread) stream-client [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf] Shutdown 1 stream threads complete
+2023-08-21 16:25:32,198 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf-CloseThread) stream-client [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf] State transition from PENDING_SHUTDOWN to NOT_RUNNING
+2023-08-21 16:25:32,198 INFO  [org.apa.kaf.str.KafkaStreams] (Shutdown thread) stream-client [play-with-quarkus-4657aba6-d8af-495c-bc71-d6251a6415cf] Streams client stopped completely
+2023-08-21 16:25:32,224 INFO  [io.quarkus] (Shutdown thread) play-with-quarkus stopped in 0.131s
+Starting the Java application using /opt/jboss/container/java/run/run-java.sh ...
+__  ____  __  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2023-08-21 16:25:34,057 WARN  [org.apa.kaf.cli.adm.AdminClientConfig] (main) These configurations '[ssl.endpoint.identification.algorithm]' were supplied but are not used yet.
+2023-08-21 16:25:34,118 INFO  [org.kaf.StreamingApplication] (main) Hellllllllllllllllllllllllloooooooooooooooooooooooo
+2023-08-21 16:25:34,122 INFO  [io.con.kaf.ser.KafkaAvroSerializerConfig] (main) KafkaAvroSerializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.remove.java.properties = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8080]
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-08-21 16:25:34,428 INFO  [io.con.kaf.ser.KafkaAvroDeserializerConfig] (main) KafkaAvroDeserializerConfig values: 
+	auto.register.schemas = true
+	avro.reflection.allow.null = false
+	avro.use.logical.type.converters = false
+	basic.auth.credentials.source = URL
+	basic.auth.user.info = [hidden]
+	bearer.auth.cache.expiry.buffer.seconds = 300
+	bearer.auth.client.id = null
+	bearer.auth.client.secret = null
+	bearer.auth.credentials.source = STATIC_TOKEN
+	bearer.auth.identity.pool.id = null
+	bearer.auth.issuer.endpoint.url = null
+	bearer.auth.logical.cluster = null
+	bearer.auth.scope = null
+	bearer.auth.scope.claim.name = scope
+	bearer.auth.sub.claim.name = sub
+	bearer.auth.token = [hidden]
+	context.name.strategy = class io.confluent.kafka.serializers.context.NullContextNameStrategy
+	id.compatibility.strict = true
+	key.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+	latest.cache.size = 1000
+	latest.cache.ttl.sec = -1
+	latest.compatibility.strict = true
+	max.schemas.per.subject = 1000
+	normalize.schemas = false
+	proxy.host = 
+	proxy.port = -1
+	rule.actions = []
+	rule.executors = []
+	schema.format = null
+	schema.reflection = false
+	schema.registry.basic.auth.user.info = [hidden]
+	schema.registry.ssl.cipher.suites = null
+	schema.registry.ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	schema.registry.ssl.endpoint.identification.algorithm = https
+	schema.registry.ssl.engine.factory.class = null
+	schema.registry.ssl.key.password = null
+	schema.registry.ssl.keymanager.algorithm = SunX509
+	schema.registry.ssl.keystore.certificate.chain = null
+	schema.registry.ssl.keystore.key = null
+	schema.registry.ssl.keystore.location = null
+	schema.registry.ssl.keystore.password = null
+	schema.registry.ssl.keystore.type = JKS
+	schema.registry.ssl.protocol = TLSv1.3
+	schema.registry.ssl.provider = null
+	schema.registry.ssl.secure.random.implementation = null
+	schema.registry.ssl.trustmanager.algorithm = PKIX
+	schema.registry.ssl.truststore.certificates = null
+	schema.registry.ssl.truststore.location = null
+	schema.registry.ssl.truststore.password = null
+	schema.registry.ssl.truststore.type = JKS
+	schema.registry.url = [http://localhost:8080]
+	specific.avro.key.type = null
+	specific.avro.reader = true
+	specific.avro.value.type = null
+	use.latest.version = false
+	use.latest.with.metadata = null
+	use.schema.id = -1
+	value.subject.name.strategy = class io.confluent.kafka.serializers.subject.TopicNameStrategy
+
+2023-08-21 16:25:34,460 INFO  [org.apa.kaf.str.StreamsConfig] (main) StreamsConfig values: 
+	acceptable.recovery.lag = 10000
+	application.id = play-with-quarkus
+	application.server = 
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [kafka-1:9092]
+	buffered.records.per.partition = 1000
+	built.in.metrics.version = latest
+	cache.max.bytes.buffering = 10485760
+	client.id = 
+	commit.interval.ms = 30000
+	connections.max.idle.ms = 540000
+	default.deserialization.exception.handler = class org.apache.kafka.streams.errors.LogAndFailExceptionHandler
+	default.dsl.store = rocksDB
+	default.key.serde = null
+	default.list.key.serde.inner = null
+	default.list.key.serde.type = null
+	default.list.value.serde.inner = null
+	default.list.value.serde.type = null
+	default.production.exception.handler = class org.apache.kafka.streams.errors.DefaultProductionExceptionHandler
+	default.timestamp.extractor = class org.apache.kafka.streams.processor.FailOnInvalidTimestamp
+	default.value.serde = null
+	max.task.idle.ms = 0
+	max.warmup.replicas = 2
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	num.standby.replicas = 0
+	num.stream.threads = 1
+	poll.ms = 100
+	probing.rebalance.interval.ms = 600000
+	processing.guarantee = at_least_once
+	rack.aware.assignment.tags = []
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	repartition.purge.interval.ms = 30000
+	replication.factor = -1
+	request.timeout.ms = 40000
+	retries = 0
+	retry.backoff.ms = 100
+	rocksdb.config.setter = null
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	state.cleanup.delay.ms = 600000
+	state.dir = /tmp/kafka-streams
+	statestore.cache.max.bytes = 10485760
+	task.timeout.ms = 300000
+	topology.optimization = none
+	upgrade.from = null
+	window.size.ms = null
+	windowed.inner.class.serde = null
+	windowstore.changelog.additional.retention.ms = 86400000
+
+2023-08-21 16:25:34,478 WARN  [org.apa.kaf.cli.adm.AdminClientConfig] (main) These configurations '[ssl.endpoint.identification.algorithm]' were supplied but are not used yet.
+2023-08-21 16:25:34,481 INFO  [org.apa.kaf.str.KafkaStreams] (main) stream-client [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba] Kafka Streams version: 3.4.0
+2023-08-21 16:25:34,481 INFO  [org.apa.kaf.str.KafkaStreams] (main) stream-client [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba] Kafka Streams commit ID: 2e1947d240607d53
+2023-08-21 16:25:34,491 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] Creating restore consumer client
+2023-08-21 16:25:34,520 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] Creating thread producer client
+2023-08-21 16:25:34,548 INFO  [org.apa.kaf.str.pro.int.StreamThread] (main) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] Creating consumer client
+2023-08-21 16:25:34,559 INFO  [org.apa.kaf.str.pro.int.ass.AssignorConfiguration] (main) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1-consumer] Cooperative rebalancing protocol is enabled now
+2023-08-21 16:25:34,669 INFO  [io.quarkus] (main) play-with-quarkus 1.0.0-SNAPSHOT on JVM (powered by Quarkus 3.2.4.Final) started in 1.494s. Listening on: http://0.0.0.0:8080
+2023-08-21 16:25:34,670 INFO  [io.quarkus] (main) Profile prod activated. 
+2023-08-21 16:25:34,670 INFO  [io.quarkus] (main) Installed features: [cdi, confluent-registry-avro, kafka-client, kafka-streams, resteasy-jackson, smallrye-context-propagation, vertx]
+2023-08-21 16:25:35,589 INFO  [org.apa.kaf.str.KafkaStreams] (pool-5-thread-1) stream-client [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba] State transition from CREATED to REBALANCING
+2023-08-21 16:25:35,591 INFO  [org.apa.kaf.str.KafkaStreams] (pool-5-thread-1) stream-client [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba] Started 1 stream threads
+2023-08-21 16:25:35,591 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] Starting
+2023-08-21 16:25:35,592 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] State transition from CREATED to STARTING
+2023-08-21 16:25:35,699 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] Processed 0 total records, ran 0 punctuators, and committed 0 total tasks since the last update
+2023-08-21 16:26:16,043 INFO  [org.apa.kaf.str.pro.int.RepartitionTopics] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1-consumer] Skipping the repartition topic validation since there are no repartition topics.
+2023-08-21 16:26:16,054 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1-consumer] All members participating in this rebalance: 
+496af146-871c-49eb-a064-1c662d857fba: [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1-consumer-a8b2f425-3480-4b96-8693-9456094f3788].
+2023-08-21 16:26:16,060 INFO  [org.apa.kaf.str.pro.int.ass.HighAvailabilityTaskAssignor] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) Decided on assignment: {496af146-871c-49eb-a064-1c662d857fba=[activeTasks: ([0_0]) standbyTasks: ([]) prevActiveTasks: ([]) prevStandbyTasks: ([]) changelogOffsetTotalsByTask: ([]) taskLagTotals: ([]) clientTags: ([]) capacity: 1 assigned: 1]} with no followup probing rebalance.
+2023-08-21 16:26:16,061 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1-consumer] Assigned tasks [0_0] including stateful [] to clients as: 
+496af146-871c-49eb-a064-1c662d857fba=[activeTasks: ([0_0]) standbyTasks: ([])].
+2023-08-21 16:26:16,072 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1-consumer] Client 496af146-871c-49eb-a064-1c662d857fba per-consumer assignment:
+	prev owned active {}
+	prev owned standby {play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1-consumer-a8b2f425-3480-4b96-8693-9456094f3788=[]}
+	assigned active {play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1-consumer-a8b2f425-3480-4b96-8693-9456094f3788=[0_0]}
+	revoking active {}
+	assigned standby {}
+
+2023-08-21 16:26:16,073 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1-consumer] Finished stable assignment of tasks, no followup rebalances required.
+2023-08-21 16:26:16,093 INFO  [org.apa.kaf.str.pro.int.StreamsPartitionAssignor] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1-consumer] No followup rebalance was requested, resetting the rebalance schedule.
+2023-08-21 16:26:16,094 INFO  [org.apa.kaf.str.pro.int.TaskManager] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] Handle new assignment with:
+	New active tasks: [0_0]
+	New standby tasks: []
+	Existing active tasks: []
+	Existing standby tasks: []
+2023-08-21 16:26:16,109 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] State transition from STARTING to PARTITIONS_ASSIGNED
+2023-08-21 16:26:16,178 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] task [0_0] Initialized
+2023-08-21 16:26:16,191 INFO  [org.apa.kaf.str.pro.int.StreamTask] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] task [0_0] Restored and ready to run
+2023-08-21 16:26:16,193 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] Restoration took 84 ms for all tasks [0_0]
+2023-08-21 16:26:16,193 INFO  [org.apa.kaf.str.pro.int.StreamThread] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-thread [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1] State transition from PARTITIONS_ASSIGNED to RUNNING
+2023-08-21 16:26:16,196 INFO  [org.apa.kaf.str.KafkaStreams] (play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba-StreamThread-1) stream-client [play-with-quarkus-496af146-871c-49eb-a064-1c662d857fba] State transition from REBALANCING to RUNNING

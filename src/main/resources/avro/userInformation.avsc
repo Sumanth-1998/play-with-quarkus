@@ -1,0 +1,29 @@
+{
+  "type": "record",
+  "name": "UserInformation",
+  "namespace": "avro",
+  "fields": [
+    {
+      "name": "name",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "ssn",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "email",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "dob",
+      "type": ["null", "string"],
+      "default": null
+    }
+  ]
+}
+
+

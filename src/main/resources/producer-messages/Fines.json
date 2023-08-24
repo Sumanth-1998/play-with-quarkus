@@ -1,0 +1,72 @@
+[
+  {
+    "id": "1",
+    "fineReason": "RED_LIGHT_VIOLATION",
+    "fineDate": "24/07/2023",
+    "fineAmount": "",
+    "ssn": "101"
+  },
+  {
+    "id": "2",
+    "fineReason": "DRINK_AND_DRIVE",
+    "fineDate": "25/07/2023",
+    "fineAmount": "",
+    "ssn": "101"
+  },
+  {
+    "id": "3",
+    "fineReason": "OVER_SPEEDING",
+    "fineDate": "26/08/2023",
+    "fineAmount": "",
+    "ssn": "102"
+  },
+  {
+    "id": "4",
+    "fineReason": "ONE_WAY_VIOLATION",
+    "fineDate": "27/08/2023",
+    "fineAmount": "",
+    "ssn": "102"
+  },
+  {
+    "id": "5",
+    "fineReason": "NO_SEAT_BELT",
+    "fineDate": "15/08/2023",
+    "fineAmount": "",
+    "ssn": "102"
+  },
+  {
+    "id": "6",
+    "fineReason": "RED_LIGHT_VIOLATION",
+    "fineDate": "16/08/2023",
+    "fineAmount": "",
+    "ssn": "103"
+  },
+  {
+    "id": "7",
+    "fineReason": "NO_SEAT_BELT",
+    "fineDate": "17/08/2023",
+    "fineAmount": "",
+    "ssn": "103"
+  },
+  {
+    "id": "8",
+    "fineReason": "OVER_SPEEDING",
+    "fineDate": "18/08/2023",
+    "fineAmount": "",
+    "ssn": "103"
+  },
+  {
+    "id": "9",
+    "fineReason": "DRINK_AND_DRIVE",
+    "fineDate": "19/08/2023",
+    "fineAmount": "",
+    "ssn": "104"
+  },
+  {
+    "id": "10",
+    "fineReason": "ONE_WAY_VIOLATION",
+    "fineDate": "20/08/2023",
+    "fineAmount": "",
+    "ssn": "104"
+  }
+]

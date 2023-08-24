@@ -1,0 +1,32 @@
+{
+  "type": "record",
+  "name": "Fine",
+  "namespace": "avro",
+  "fields": [
+    {
+      "name": "id",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "fineReason",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "fineAmount",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "fineDate",
+      "type": ["null", "string"],
+      "default": null
+    },
+    {
+      "name": "ssn",
+      "type": ["null", "string"],
+      "default": null
+    }
+  ]
+}
