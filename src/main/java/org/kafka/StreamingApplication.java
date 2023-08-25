@@ -1,8 +1,8 @@
 package org.kafka;
 
 import avro.Fine;
+import avro.UserFineDto;
 import avro.UserInformation;
-import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.confluent.kafka.serializers.AbstractKafkaSchemaSerDeConfig;
@@ -13,10 +13,15 @@ import jakarta.enterprise.inject.Produces;
 import org.apache.kafka.clients.producer.*;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.common.serialization.StringSerializer;
+import org.apache.kafka.common.utils.Bytes;
 import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.Topology;
-import org.apache.kafka.streams.kstream.Consumed;
+import org.apache.kafka.streams.kstream.*;
+import org.apache.kafka.streams.state.KeyValueBytesStoreSupplier;
+import org.apache.kafka.streams.state.KeyValueStore;
+import org.apache.kafka.streams.state.Stores;
 import org.jboss.logging.Logger;
+import org.kafka.valuejoiner.UserInfoFineJoiner;
 
 import java.io.IOException;
 import java.util.*;
@@ -31,12 +36,16 @@ public class StreamingApplication {
 
     private SpecificAvroSerde<UserInformation> userInformationSpecificAvroSerde ;
     private SpecificAvroSerde<Fine> fineSpecificAvroSerde ;
+    private SpecificAvroSerde<UserFineDto> userFineDtoSpecificAvroSerde;
 
 
 
     @PostConstruct
     public void setup() throws IOException {
         userInformationSpecificAvroSerde = new SpecificAvroSerde<>();
+        Map<String, String> serdeConfig = Collections.singletonMap(AbstractKafkaSchemaSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG, "http://schemaregistry:8085");
+        userFineDtoSpecificAvroSerde = new SpecificAvroSerde<>();
+        userFineDtoSpecificAvroSerde.configure(serdeConfig, false);
         fineSpecificAvroSerde = new SpecificAvroSerde<>();
         LOGGER.info("------------------------ Producer started -------------------");
         Properties properties = new Properties();
@@ -58,18 +67,7 @@ public class StreamingApplication {
         List<UserInformation> userInformationList = List.of(sumanth, raghu, praveen, sujay);
         KafkaProducer<String, UserInformation> kafkaProducer = new KafkaProducer<>(properties, Serdes.String().serializer(), userInformationSpecificAvroSerde.serializer());
         userInformationList.forEach((UserInformation userInformation) -> {
-            LOGGER.info("-------------------------- Traversing list ------------------");
-            kafkaProducer.send(new ProducerRecord<>("user-information", userInformation.get("ssn").toString(), userInformation), new Callback() {
-                @Override
-                public void onCompletion(RecordMetadata recordMetadata, Exception e) {
-                    if(e != null){
-                        LOGGER.error(e.getMessage());
-                    } else{
-                        LOGGER.info("Message sent successfully");
-                    }
-                }
-            });
-            kafkaProducer.flush();
+            kafkaProducer.send(new ProducerRecord<>("user-information", userInformation.get("ssn").toString(), userInformation));
         });
     }
     private void produceFineMessages(Properties properties) throws IOException {
@@ -89,37 +87,56 @@ public class StreamingApplication {
         );
         KafkaProducer<String, Fine> kafkaProducer = new KafkaProducer<>(properties, Serdes.String().serializer(), fineSpecificAvroSerde.serializer());
         fineList.forEach((Fine fine) -> {
-            LOGGER.info("-------------------------- Traversing list ------------------");
-            kafkaProducer.send(new ProducerRecord<>("fines", fine.get("id").toString(), fine), new Callback() {
-                @Override
-                public void onCompletion(RecordMetadata recordMetadata, Exception e) {
-                    if(e != null){
-                        LOGGER.error(e.getMessage());
-                    } else{
-                        LOGGER.info("Message sent successfully");
-                    }
-                }
-            });
+            kafkaProducer.send(new ProducerRecord<>("fines", fine.get("id").toString(), fine));
         });
     }
 
-    private void printSuccessMessage(){
-        LOGGER.info("Message send success!!");
-    }
 
 
     @Produces
     public Topology hello() {
         userInformationSpecificAvroSerde.configure(Collections.singletonMap(AbstractKafkaSchemaSerDeConfig.SCHEMA_REGISTRY_URL_CONFIG, "http://localhost:8080"), false);
         StreamsBuilder streamsBuilder = new StreamsBuilder();
-        streamsBuilder.stream("user-information", Consumed.with(Serdes.String(), userInformationSpecificAvroSerde))
-                .peek((key, value) -> System.out.println("Hello : " + key + ":" + value));
-        streamsBuilder.stream("fines", Consumed.with(Serdes.String(), fineSpecificAvroSerde))
-                .peek((key, value) -> System.out.println("Hello : " + key + ":" + value));
+        KeyValueBytesStoreSupplier userInfoStoreSupplier = Stores.persistentKeyValueStore("user-information-key-store");
+        Materialized<String, UserInformation, KeyValueStore<Bytes, byte[]>> userInfoMaterialized = Materialized.<String, UserInformation>as(userInfoStoreSupplier)
+                .withKeySerde(Serdes.String())
+                .withValueSerde(userInformationSpecificAvroSerde);
+        KTable<String, UserInformation> userInformationKStream = streamsBuilder.stream("user-information", Consumed.with(Serdes.String(), userInformationSpecificAvroSerde))
+                .toTable(Named.as("user-information-table"), userInfoMaterialized);
+
+        KeyValueBytesStoreSupplier storeSupplier = Stores.persistentKeyValueStore("fine-key-store");
+        Materialized<String, List<Fine>, KeyValueStore<Bytes, byte[]>> materialized = Materialized.<String, List<Fine>>as(storeSupplier)
+                        .withKeySerde(Serdes.String())
+                                .withValueSerde(Serdes.ListSerde(ArrayList.class, fineSpecificAvroSerde));
+
+        KTable<String, List<Fine>> fineKTable = streamsBuilder
+                .stream("fines", Consumed.with(Serdes.String(), fineSpecificAvroSerde))
+                .selectKey((key, fine) -> fine.get("ssn").toString())
+                .groupByKey(Grouped.with(Serdes.String(), fineSpecificAvroSerde))
+                .aggregate(
+                        ArrayList::new,
+                        (ssn, fine, fineList) -> {
+                            fineList.add(fine);
+                            return fineList;
+                        },
+                        materialized
+                );
 
 
-        Topology topology = streamsBuilder.build();
-        return topology;
+        KeyValueBytesStoreSupplier joinedStoreSupplier = Stores.persistentKeyValueStore("joined-key-store");
+        Materialized<String, UserFineDto, KeyValueStore<Bytes, byte[]>> joinedMaterialized = Materialized.<String, UserFineDto>as(joinedStoreSupplier)
+                .withKeySerde(Serdes.String())
+                .withValueSerde(userFineDtoSpecificAvroSerde);
+
+        KTable<String, UserFineDto> ssn = userInformationKStream
+                .join(fineKTable,
+                        new UserInfoFineJoiner(),
+                        joinedMaterialized);
+        ssn.toStream()
+                .peek((key, value) -> System.out.println("$$$$$$$$$$$$$$$$   " + key + " : " + value + "$$$$$$$$$$$$$$$$$"))
+                .to("user-fines-information", Produced.with(Serdes.String(), userFineDtoSpecificAvroSerde));
+
+        return streamsBuilder.build();
     }
 
 }

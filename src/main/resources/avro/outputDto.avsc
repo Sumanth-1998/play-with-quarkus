@@ -1,0 +1,76 @@
+{
+  "name": "UserFineDto",
+  "namespace": "avro",
+  "type": "record",
+  "fields": [
+    {
+      "name": "fines",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": {
+            "type": "record",
+            "name": "Fine",
+            "namespace": "avro",
+            "fields": [
+              {
+                "name": "id",
+                "type": ["null", "string"],
+                "default": null
+              },
+              {
+                "name": "fineReason",
+                "type": ["null", "string"],
+                "default": null
+              },
+              {
+                "name": "fineAmount",
+                "type": ["null", "string"],
+                "default": null
+              },
+              {
+                "name": "fineDate",
+                "type": ["null", "string"],
+                "default": null
+              },
+              {
+                "name": "ssn",
+                "type": ["null", "string"],
+                "default": null
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "name",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "ssn",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "email",
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    {
+      "name": "dob",
+      "type": [
+        "null",
+        "string"
+      ]
+    }
+  ]
+}
